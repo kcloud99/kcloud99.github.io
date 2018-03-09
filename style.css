@@ -1,0 +1,64 @@
+.fonts {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Handlee', cursive;
+  font-family: 'Kalam', cursive;
+  font-family: 'Architects Daughter', cursive;
+  font-family: 'Rock Salt', cursive;
+  font-family: 'Caveat Brush', cursive;
+  font-family: 'Covered By Your Grace', cursive;
+  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Merienda', cursive;
+}
+
+#home img {
+  height: 2em;
+}
+
+#home h1 {
+  display: flex;
+  align-items: center;
+}
+
+#Nunito {
+  font-family: 'Nunito', sans-serif;
+}
+#Roboto {
+  font-family: 'Roboto Mono', monospace;
+}
+#Indie {
+  font-family: 'Indie Flower', cursive;
+}
+#Gloria {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+#Nanum {
+  font-family: 'Nanum Pen Script', cursive;
+}
+#Handlee {
+  font-family: 'Handlee', cursive;
+}
+#Kalam {
+  font-family: 'Kalam', cursive;
+}
+#Architects {
+  font-family: 'Architects Daughter', cursive;
+}
+#Rock {
+  font-family: 'Rock Salt', cursive;
+}
+#Caveat {
+  font-family: 'Caveat Brush', cursive;
+}
+#Covered {
+  font-family: 'Covered By Your Grace', cursive;
+}
+#Nothing {
+  font-family: 'Nothing You Could Do', cursive;
+}
+#Merienda {
+  font-family: 'Merienda', cursive;
+}
