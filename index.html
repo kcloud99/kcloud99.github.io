@@ -38,13 +38,19 @@
         <a class="item">
           <i class="github icon"></i>
         </a>
-        <a class="ui item">
+        <a class="ui item" href="#contact">
           get in touch
         </a>
       </div>
     </div>
     <!-- END menu -->
     <!-- START Main section with title/subtitle -->
+    <div class="logo">
+      <a href="#top">
+      <img class="logo-pic" src="images/logo_main.png" alt="logo">
+      <p>Top</p>
+      </a>
+    </div>
     <div class="main-heading" id="home">
       <h1 class="title" id="Rock">
         cloud99 designs
@@ -136,12 +142,14 @@
               </div>
             </div>
           </div>
-          <h3 class="project-desc" id="Nunito">This application was built using the MERN stack: React,
-            Express, MongoDB, and NodeJS. The purpose of the application is to fill a void in the code challenge
-            marketplace by not only providing coding challenges, but encouraging collaboration and 
-            pair programming. SocketIO was used to create the collaborative experience, while Ace Editor for
-            React was used for writing the code in the browser.
-          </h3>
+          <div class="ui stacked segment project-desc">
+            <h3 id="Nunito">This application was built using the MERN stack: React,
+              Express, MongoDB, and NodeJS. The purpose of the application is to fill a void in the code challenge
+              marketplace by not only providing coding challenges, but encouraging collaboration and 
+              pair programming. SocketIO was used to create the collaborative experience, while Ace Editor for
+              React was used for writing the code in the browser.
+            </h3>
+          </div>
         </div>
         <div class="column centered eight wide">
           <div class="project-image" id="SPR">
@@ -154,15 +162,140 @@
               </div>
             </div>
           </div>
-          <h3 class="project-desc" id="Nunito">This website was a small project built for Sound Pacific Resorts, an RV Resorts
-            company. Themed using bright colors and landscaped background images, the website
-            focuses on providing information to the user. Built with HTML, CSS, and JS, the main 
-            features are the embedded maps, the web forms, and the picture galleries.
-          </h3>
+          <div class="ui stacked segment project-desc">
+            <h3 id="Nunito">This website was a small project built for Sound Pacific Resorts, an RV Resorts
+              company. Themed using bright colors and landscaped background images, the website
+              focuses on providing information to the user. Built with HTML, CSS, and JS, the main 
+              features are the embedded maps, the web forms, and the picture galleries.
+            </h3>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- END Projects section -->
+
+  <!-- START Blog title -->
+  <section id="blog-title">
+    <div>
+      <h1 id="Rock">Blog</h1>
+    </div>
+  </section>
+  <!-- END Blog title -->
+  <!-- START Blog section -->
+  <div class="blog-bcg">
+    <section id="blog">
+      <div class="ui top attached tabular menu">
+        <a class="item active" data-tab="teaching">
+          Teaching
+        </a>
+        <a class="item" data-tab="pairing">
+          Pair Programming
+        </a>
+        <a class="item" data-tab="freelancing">
+          Freelancing
+        </a>
+      </div>
+      <div class="ui bottom attached active tab segment" data-tab="teaching">
+        <div class="blog-image" id="Teaching">
+          <div class="middle">
+            <div class="btn">
+              <a href="https://medium.com/@kylemcleod1/from-amateur-to-pro-the-best-way-to-learn-imho-cf0d7e959317" target="_blank">
+                Check it out!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui bottom attached tab segment" data-tab="pairing">
+        <div class="blog-image" id="Pairing">
+          <div class="middle">
+            <div class="btn">
+              <a href="https://medium.com/@kylemcleod1/why-pair-programming-is-sooo-damn-important-9a1e4e1a7f40" target="_blank">
+                Check it out!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui bottom attached tab segment" data-tab="freelancing">
+        <div class="blog-image" id="Freelancing">
+          <div class="middle">
+            <div class="btn">
+              <a href="https://medium.com/@kylemcleod1/diving-in-head-first-my-journey-into-the-competitive-world-of-freelancing-a5576b0d69fc" target="_blank">
+                Check it out!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- END Blog section -->
+
+  <!-- START Video title -->
+  <section id="videos-title">
+    <div>
+      <h1 id="Rock">Video(s)</h1>
+    </div>
+  </section>
+  <!-- END Video title -->
+  <!-- START Video Section -->
+  <section id="videos">
+    <iframe class="video" width="80%" height="100%" src="https://www.youtube.com/embed/FiOgz3nKpgk" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen></iframe>
+  </section>
+  <!-- END Video Section -->
+
+  <!-- START get in touch -->
+  <section id="contact">
+    <div>
+      <div id="contact-me-title">
+        <h1 id="Rock">get in touch</h1>
+      </div>
+      <form class="ui form">
+        <div class="fields">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name">
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="text" name="phone" placeholder="Phone #">
+          </div>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="field">
+          <label>Describe your Project...</label>
+          <textarea placeholder="In a few lines, describe the project you need help with..."></textarea>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <!-- END Get in touch -->
+
+  <!-- START Footer -->
+  <footer>
+    <div>
+      <a href="#top">&copy; cloud99 designs</a>
+    </div>
+    <div>
+      <a href="#about-me">Who I am</a>
+    </div>
+    <div>
+      <a href="#projects-title">Projects</a>
+    </div>
+    <div>
+      <a href="#blog-title">Blog</a>
+    </div>
+    <div>
+      <a href="#videos-title">Video(s)</a>
+    </div>
+  </footer>
 
 
   <script type='text/javascript' src='scipt.js'></script>
@@ -177,6 +310,14 @@
     $('.project-image .image').dimmer({
         on: 'hover'
       });
+
+    $('.tabular.menu .item').tab();
+
+    // if($('#top').scrollTop() > '100px') {
+    //   console.log('success!')
+    // }
+    setInterval(console.log($('#top').scrollTop()), 1000)
+    // console.log($('#top').scrollTop());
   </script>
 </body>
 

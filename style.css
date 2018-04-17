@@ -32,14 +32,32 @@
 
 :root {
   --main-font-color: white;
+  --title-font: 'Rock Salt', cursive;
   --main-font: 'Nunito', sans-serif;
 }
 
 html, body {
   font-family: var(--main-font);
+  position: relative;
+}
+.logo {
+  position: fixed;
+  top: 2vh;
+  left: 1vw;
+  z-index: 98;
+}
+.logo p {
+  text-align: center;
+  z-index: 99;
+}
+.logo-pic {
+  height: 9vh;
+  width: 8vw;
+  z-index: 100;
 }
 
 /* Opening shot - top of page */
+/* ******************************* */
 #top {
   position: relative;
   background: linear-gradient(
@@ -65,6 +83,7 @@ html, body {
 }
 
 /* About me section */
+/* ******************************* */
 #about-me {
   margin: 10vh 10vw;
 }
@@ -89,6 +108,7 @@ html, body {
 }
 
 /* Projects section */
+/* ******************************* */
 #projects-title {
   height: 40vh;
   background: linear-gradient(
@@ -112,6 +132,9 @@ html, body {
   font-size: 3.5em;
   text-align: center;
 }
+#projects {
+  margin: 10vh 0 14vh 0;
+}
 .project-image {
   width: 45vw;
   height: 55vh;
@@ -133,6 +156,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 50;
 }
 #LUC:hover {
   background: linear-gradient(
@@ -174,6 +198,202 @@ html, body {
   font-weight: bolder;
 }
 .btn {
-  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14vw;
+  height: 7vh;
   background: white;
+  opacity: 0.8;
+  font-size: 2em;
+  border-radius: 5px;
+  font-family: 'Architects Daughter', cursive;
+}
+.segment.project-desc {
+  width: 45vw;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* Blog Section */
+/* ******************************* */
+#blog-title {
+  height: 40vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.85), 
+      rgba(0, 0, 0, 0.85)
+    ),
+    url(images/writing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#blog-title div {
+  height: 6vh;
+  width: 30vw;
+}
+#blog-title h1 {
+  color: var(--main-font-color);
+  font-size: 3.5em;
+  text-align: center;
+}
+.blog-bcg {
+  height: 130vh;
+  width: 100%;
+  background-color: #D3D4D4;
+}
+#blog {
+  margin: auto;
+  width: 55vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+#blog a {
+  font-size: 1.75em;
+  font-family: 'Architects Daughter', cursive;
+}
+.blog-image {
+  height: 95vh;
+}
+#Teaching {
+  background: url(images/blog_am_to_pro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Teaching:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75), 
+    rgba(0, 0, 0, 0.75)),
+    url(images/blog_am_to_pro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Teaching:hover .middle {
+  opacity: 1;
+}
+#Pairing {
+  background: url(images/blog_pair_program.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Pairing:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75), 
+    rgba(0, 0, 0, 0.75)),
+    url(images/blog_pair_program.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Pairing:hover .middle {
+  opacity: 1;
+}
+#Freelancing {
+  background: url(images/blog_freelance.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Freelancing:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75), 
+    rgba(0, 0, 0, 0.75)),
+    url(images/blog_freelance.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Freelancing:hover .middle {
+  opacity: 1;
+}
+
+/* Blog Section */
+/* ******************************* */
+#videos-title {
+  height: 40vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.85), 
+      rgba(0, 0, 0, 0.85)
+    ),
+    url(images/laptop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#videos-title div {
+  height: 6vh;
+  width: 30vw;
+}
+#videos-title h1 {
+  color: var(--main-font-color);
+  font-size: 3.5em;
+  text-align: center;
+}
+#videos {
+  /* width: 85vw; */
+  height: 80vh;
+  margin: 10vh auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact */
+/* **************************** */
+#contact {
+  height: 92vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.70), 
+      rgba(0, 0, 0, 0.70)
+    ),
+    url(images/working.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+#contact #contact-me-title {
+  height: 10vh;
+  width: 70vw;
+  margin: 7vh;
+}
+#contact h1 {
+  color: var(--main-font-color);
+  font-size: 3.5em;
+  text-align: center;
+}
+#contact form label {
+  font-size: 1.6em;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+}
+.fields .field {
+  width: 50%;
+}
+
+footer {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+footer div {
+  width: 20vw;
+  text-align: center;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+}
+footer div a {
+  color: white;
 }
