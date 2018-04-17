@@ -14,15 +14,6 @@
   font-family: 'Merienda', cursive;
 }
 
-#home img {
-  height: 2em;
-}
-
-#home h1 {
-  display: flex;
-  align-items: center;
-}
-
 #Nunito {
   font-family: 'Nunito', sans-serif;
 }
@@ -37,4 +28,152 @@
 }
 #Nothing {
   font-family: 'Nothing You Could Do', cursive;
+}
+
+:root {
+  --main-font-color: white;
+  --main-font: 'Nunito', sans-serif;
+}
+
+html, body {
+  font-family: var(--main-font);
+}
+
+/* Opening shot - top of page */
+#top {
+  position: relative;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(images/working_on_ledge.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#menu-bar {
+  font-size: 2em;
+}
+#home {
+  color: var(--main-font-color);
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+#home h1 {
+  font-size: 3.5em;
+}
+
+/* About me section */
+#about-me {
+  margin: 10vh 10vw;
+}
+#about-me h1 {
+  text-align: center;
+  margin-bottom: 8vh;
+  font-size: 3.5em;
+}
+#about-me p {
+  font-size: 1.8em;
+}
+#about-me h3 {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bolder;
+}
+#about-me-card {
+  width: 25vw;
+}
+#about-me-card .extra {
+  padding: 10px;
+}
+
+/* Projects section */
+#projects-title {
+  height: 40vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.85), 
+      rgba(0, 0, 0, 0.85)
+    ),
+    url(images/dream.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#projects-title div {
+  height: 6vh;
+  width: 30vw;
+}
+#projects-title h1 {
+  color: var(--main-font-color);
+  font-size: 3.5em;
+  text-align: center;
+}
+.project-image {
+  width: 45vw;
+  height: 55vh;
+  margin: 7vh auto 0 auto;
+  position: relative;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#LUC {
+  background: url(images/levelupcode.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#LUC:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75), 
+    rgba(0, 0, 0, 0.75)),
+    url(images/levelupcode.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#LUC:hover .middle {
+  opacity: 1;
+}
+#SPR {
+  background: url(images/SPR_site.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#SPR:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75), 
+    rgba(0, 0, 0, 0.75)),
+    url(images/SPR_site.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#SPR:hover .middle {
+  opacity: 1;
+}
+.project-heading {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.85), 
+    rgba(255, 255, 255, 0.85));
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bolder;
+}
+.btn {
+  width: 6vw;
+  background: white;
 }

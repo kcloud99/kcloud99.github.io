@@ -1,92 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" type="text/css" />
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Kalam|Nothing+You+Could+Do|Nunito|Rock+Salt"
-      rel="stylesheet">
-    <script type='text/javascript' src='scipt.js'></script>
-    <script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Kalam|Nothing+You+Could+Do|Nunito|Rock+Salt" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+  <script>
       // main font: Nunito
       // main title: Rock
       // Fancy script: Nothing
       // keep around: Kalam & Architects
-    </script>
+  </script>
 
-    <title>Kcloud99 Website</title>
-  </head>
+  <title>Kcloud99</title>
+</head>
 
-  <body>
-    <section class="hero is-dark is-medium is-bold">
-  <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item is-active" href="#home">
-                <span class="icon is-medium">
-                  <i class="fas fa-home"></i>
-                </span>
-              </a>
-              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+<body>
+  <section id="top" class="main">
+    <!-- Menu section -->
+    <div id="menu-bar" class="ui secondary inverted menu">
+      <div class="right menu">
+        <a class="item">
+          <i class="facebook f icon"></i>
+        </a>
+        <a class="item">
+          <i class="medium m icon"></i>
+        </a>
+        <a class="item">
+          <i class="github icon"></i>
+        </a>
+        <a class="ui item">
+          get in touch
+        </a>
+      </div>
+    </div>
+    <!-- END menu -->
+    <!-- START Main section with title/subtitle -->
+    <div class="main-heading" id="home">
+      <h1 class="title" id="Rock">
+        cloud99 designs
+      </h1>
+      <h2 class="subtitle is-4" id="Nothing">
+        JavaScript Consulting and Design of all Types
+      </h2>
+    </div>
+  </section>
+  <!-- END top section -->
+
+  <!-- START About me section -->
+  <section id="about-me">
+    <div class="ui two column grid">
+      <div class="row">
+        <div class="column ten wide">
+          <div id="about-me-content">
+            <h1 class="about-me-title" id="Rock">Who I Am</h1>
+            <h3 id="Nunito">Hi! I'm Kyle! How's your day going?</h3>
+            <p id="Nunito">I'm originally a Seattle Native but now living the mountain lifestyle in beautiful Central Oregon! I like all kinds of
+              outdoor sports and enjoying a nice micro brew at one of the many spots around here... I'm also a
+              <span class="highlight">Professional Full-Stack Javascript Developer,</span> with a focus on creating beautiful things! I'm incredibly passionate
+              about helping others discover their voice in this crazy online world of ours, so please check out my site and some of
+              my work! If you like what you see, drop me a line and we can talk about how to get your vision out to the world! Look
+              forward to working with you!
+            </p>
+          </div>
+        </div>
+        <div class="column six wide">
+          <div class="ui centered blue card" id="about-me-card">
+            <div class="image">
+              <img src="images/me.jpg" class="visible content">
             </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item" href="#">
-                  <span class="icon is-medium">
-                    <i class="fab fa-twitter"></i>
-                  </span>
-                </a>
-                <a class="navbar-item" href="#">
-                  <span class="icon is-medium">
-                    <i class="fab fa-facebook-f"></i>
-                  </span>
-                </a>
-                <a class="navbar-item" href="#">
-                  <span class="icon is-medium">
-                    <i class="fab fa-instagram"></i>
-                  </span>
-                </a>
-                <a class="navbar-item" href="https://github.com/kcloud99" target="_blank">
-                  <span class="icon is-medium">
-                    <i class="fab fa-github"></i>
-                  </span>
-                </a>
-                <a class="navbar-item">
-                  get in touch
+            <div class="content">
+              <p class="header">Some things I'm good at...</p>
+            </div>
+            <div>
+              <div class="extra right floated">
+                Javascript:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+              <div class="extra">
+                HTML/CSS:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+              <div class="extra right floated">
+                React:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+              <div class="extra">
+                NodeJS:
+                <div class="ui star rating" data-rating="4"></div>
+              </div>
+              <div class="extra right floated">
+                Angular:
+                <div class="ui star rating" data-rating="3"></div>
+              </div>
+              <div class="extra">
+                GraphQL:
+                <div class="ui star rating" data-rating="3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END about me section -->
+
+  <!-- START Projects Title -->
+  <section id="projects-title">
+    <div>
+      <h1 id="Rock">Projects</h1>
+    </div>
+  </section>
+  <!-- END Projects Title -->
+  <!-- START Projects Section -->
+  <section id="projects">
+    <div class="ui two column grid">
+      <div class="row">
+        <div class="column centered eight wide">
+          <div class="project-image" id="LUC">
+            <h2 class="project-heading">LevelUP Code App</h2>
+            <div class="middle">
+              <div class="btn">
+                <a href="https://levelupcode.herokuapp.com/" target="_blank">
+                  Check it out!
                 </a>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-
-      <!-- Hero content: will be in the middle -->
-      <div class="hero-body" id="home">
-        <div class="container">
-          <h1 class="title is-1" id="Rock">
-             cloud99 designs
-          </h1>
-          <h2 class="subtitle is-4" id="Nothing">
-            JavaScript Consulting and Design of all Types
-          </h2>
+          <h3 class="project-desc" id="Nunito">This application was built using the MERN stack: React,
+            Express, MongoDB, and NodeJS. The purpose of the application is to fill a void in the code challenge
+            marketplace by not only providing coding challenges, but encouraging collaboration and 
+            pair programming. SocketIO was used to create the collaborative experience, while Ace Editor for
+            React was used for writing the code in the browser.
+          </h3>
+        </div>
+        <div class="column centered eight wide">
+          <div class="project-image" id="SPR">
+            <h2 class="project-heading">Sound Pacific Resorts Website</h2> 
+            <div class="middle">
+              <div class="btn">
+                <a href="https://www.soundpacificrv.com/" target="_blank">
+                  Check it out!
+                </a>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-desc" id="Nunito">This website was a small project built for Sound Pacific Resorts, an RV Resorts
+            company. Themed using bright colors and landscaped background images, the website
+            focuses on providing information to the user. Built with HTML, CSS, and JS, the main 
+            features are the embedded maps, the web forms, and the picture galleries.
+          </h3>
         </div>
       </div>
-    </section>
-    <div>  
-      <h1 class="title is-3" id="Nunito">This will be the main font for the website!</h1>
     </div>
-  </body>
+  </section>
+
+
+  <script type='text/javascript' src='scipt.js'></script>
+  <script type='text/javascript'>
+    $('.ui.rating')
+        .rating({
+          initialRating: 3,
+          maxRating: 5
+        })
+        .rating('disable');
+
+    $('.project-image .image').dimmer({
+        on: 'hover'
+      });
+  </script>
+</body>
 
 </html>
