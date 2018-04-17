@@ -145,10 +145,14 @@ body, html {
   font-weight: bolder;
 }
 #about-me-card {
-  width: 25vw;
+  width: 28vw;
 }
 #about-me-card .extra {
   padding: 10px;
+}
+.highlight {
+  font-weight: bolder;
+  color: black;
 }
 
 /* Projects section */
@@ -303,6 +307,18 @@ body, html {
 }
 .blog-image {
   height: 95vh;
+}
+.blog-image .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18vw;
+  height: 7vh;
+  background: white;
+  opacity: 0.8;
+  font-size: 1.4em;
+  border-radius: 5px;
+  font-family: 'Architects Daughter', cursive;
 }
 #Teaching {
   background: url(images/blog_am_to_pro.png);
